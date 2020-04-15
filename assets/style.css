@@ -1,0 +1,73 @@
+*{ box-sizing:border-box;}
+body{ padding:0; margin:0;}
+
+body{
+    background-color:  grey;
+}
+
+/* hide horizontal scrollbar in chrome */
+::-webkit-scrollbar{
+    display: none
+}
+.wrapper{
+    background-color: white;
+    padding: 50px 0px;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    /* hide horizontal scroll bar in firefox */
+    scrollbar-width: none; 
+    position: absolute;
+    padding-left: 25px;
+}
+
+.mas-grid-container{
+    width: 1800px;
+}
+.grid{
+    min-width: 1800px;
+}
+
+.img-cont{
+    overflow: hidden;
+}
+.img-cont img{
+    width: 100%;
+    border-radius: 5px;
+}
+.grid-item{
+    margin-bottom: 10px;
+}
+.grid-item--d1{
+    margin-top: 10%;
+}
+.grid-item--d2{
+    margin-top: 15px;
+}
+.grid-item--d3{
+    margin-top: -30px;
+}
+.grid-item--d6{
+    margin-top: 20px;
+}
+
+/* .progress-container{
+    margin: 0 auto;
+    height: 30px;
+} */
+.progress-holder{
+    display: flex;
+    width: 400px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid black;
+    position: fixed;
+    left: 50px;
+    bottom: 10px;
+}
+#progress-scroll-bar {
+    background-color: skyblue;
+    width: 0%;
+    height: 26px;
+    z-index: 100;
+}
