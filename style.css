@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+
+html, body { height: 100%; background-color: grey; }
+
+/* hide horizontal scrollbar in chrome */
+::-webkit-scrollbar{
+    display: none
+}
+
+.mas-grid-container{
+    background-color: green;
+}
+
+/* ---- grid ---- */
+.grid {
+  background: #DDD;
+  height: 500px; 
+}
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* ---- .grid-item ---- */
+
+.grid-item {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: black;
+  border: 2px solid red;
+}
+
+.grid-item--width2 { width: 200px; }
+.grid-item--height2 { height: 500px; }
+.grid-item--height1 { height: 200px; }
+
+  
